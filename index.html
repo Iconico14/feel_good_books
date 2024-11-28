@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feel Good Book Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>How Are You Feeling Today?</h1>
+        <form id="feeling-form">
+            <label for="feeling">Select your mood:</label>
+            <select id="feeling" name="feeling">
+                <option value="happy">😊 Happy</option>
+                <option value="sad">😢 Sad</option>
+                <option value="stressed">😰 Stressed</option>
+                <option value="motivated">💪 Motivated</option>
+            </select>
+            <button type="button" id="submit">See Recommendations</button>
+        </form>
+        <div id="recommendations" class="hidden">
+            <h2>Recommended Books:</h2>
+            <div id="book-list"></div>
+        </div>
+    </div>
+    <footer>
+        <p>Made with ❤️ by Your Name</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
